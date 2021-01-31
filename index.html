@@ -12,6 +12,7 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,21 +25,26 @@
             <div class="header-inner">
                 <div class="container">
                     <!--Logo-->
-                    <div id="logo"> <a href="index.html"><span class="logo-default">GUUX</span><span class="logo-dark">GUUX</span></a> </div>
+                    <div id="logo"> 
+                        <a href="index.html">
+                            <img src="images/guux.png" class="logo-default">
+                            <img src="images/guux-dark.png" class="logo-dark">
+                        </a> 
+                    </div>
                     <!--End: Logo-->
                     <!--Navigation Responsive Trigger-->
                     <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
                     <!--end: Navigation Responsive Trigger-->
                     <!--Navigation-->
-                    <div id="mainMenu">
+                    <div id="mainMenu" class="menu-one-page">
                         <div class="container">
                             <nav>
                                 <ul>
-                                    <li><a href="index.html">Inicio</a></li>
-                                    <li><a href="index.html#acerca-de">Acerca de</a></li>
-                                    <li><a href="index.html#software-libre">Software Libre</a></li>
-                                    <li><a href="index.html#servicios">Servicios</a></li>
-                                    <li><a href="index.html#contacto">Contacto</a></li>
+                                    <li><a href="#inicio">Inicio</a></li>
+                                    <li><a href="#acerca-de">Acerca de</a></li>
+                                    <li><a href="#software-libre">Software Libre</a></li>
+                                    <li><a href="#servicios">Servicios</a></li>
+                                    <li><a href="#contacto">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -50,7 +56,7 @@
         <!-- end: Header -->
 
         <!-- SECTION IMAGE FULLSCREEN -->
-        <section class="fullscreen" data-bg-parallax="images/parallax/14.jpg">
+        <section id="inicio" class="fullscreen" data-bg-parallax="images/parallax/14.jpg">
             <div class="bg-overlay" data-style="1"></div>
             <div class="container-fluid">
                 <div class="container-fullscreen">
@@ -58,7 +64,7 @@
                         <h3 class="m-b-0 text-dark"></h3>
                         <h2 class="text-lg m-b-0 text-dark">Digitaliza tu mundo</h2>
                         <p class="lead text-dark">Inicia la transformación digital con GUUX.</p>
-                        <a class="btn" href="#servicios">Conoce cómo</a>
+                        <a class="btn scroll-to" href="#servicios">Conoce cómo</a>
                     </div>
                 </div>
             </div>
@@ -84,22 +90,23 @@
         </section>
         <!-- end: COMPANY -->
 
-        <!-- Particle bubble -->
-        <section id="software-libre" style="background-color:#25286e;">
-            <div id="particles-bubble" class="particles"></div>
+        <!-- Particle 1 -->
+        <section id="software-libre"  style="background-color:#000;">
+            <div id="particles-dots" class="particles"></div>
             <div class="container">
                 <div class="heading-text text-light text-center">
-                    <h5 class="text-uppercase">Comprometidos con el</h5>
+                    <h5 class="text-uppercase">Comprometidos con el<thead></thead></h5>
                     <h2 class="font-weight-800"><span>Software Libre</span></h2>
                     <p>
-                        En GUUX reconocemos su importancia en el desarrollo y la innovación tecnológica, es por eso que contribuimos 
-                        a la comunidad a través de la donación de software libre y la divulgación de su uso.
+                        En GUUX reconocemos su importancia en el desarrollo y la innovación tecnológica, es por eso 
+                        que contribuimos a la comunidad a través de la donación de software libre y la divulgación de 
+                        su uso.
                     </p>
                     <a href="https://github.com/guux" class="btn btn-rounded">Explorar</a>
                 </div>
             </div>
         </section>
-        <!-- end: Particle bubble -->
+        <!-- end: Particle 1 -->
         
         <!-- SERVICES -->
         <section id="servicios">
@@ -299,6 +306,9 @@
 
     <!--Template functions-->
     <script src="js/functions.js"></script>
+
+    <script src="plugins/particles/particles.js" type="text/javascript"></script>
+    <script src="plugins/particles/particles-dots.js" type="text/javascript"></script>
 
 </body>
 

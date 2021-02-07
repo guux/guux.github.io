@@ -1120,7 +1120,7 @@ var INSPIRO = {},
       INSPIRO.elements.videoBackground();
       INSPIRO.elements.forms();
       INSPIRO.elements.formValidation();
-      INSPIRO.elements.formAjaxProcessing();
+      //INSPIRO.elements.formAjaxProcessing();
       INSPIRO.elements.floatingDiv();
       INSPIRO.elements.wizard();
       INSPIRO.elements.counters();
